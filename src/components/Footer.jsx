@@ -7,7 +7,10 @@ function Footer() {
       <div className="flex ml-12 mr-8 space-x-3 items-center justify-between ">
         <div className="ml-8 flex items-center justify-center space-x-2">
           <img src={edit1} alt="edit" />
-          <p className="sub-heading_light p-2">Your message.....</p>
+          <input
+            className="sub-heading_dark p-2 focus:outline-none placeholder:sub-heading_light"
+            placeholder="Your message...."
+          />
         </div>
         <div className="flex items-center justify-center">
           <img src={microphone} alt="edit" className="mx-3" />

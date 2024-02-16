@@ -63,7 +63,10 @@ function MidLeftContainer() {
         <div className="bg-white shadow-lg w-[360px] h-[44px] rounded-lg flex items-center justify-start px-4 mt-4">
           <div className="flex items-center justify-start space-x-3 px-3 py-2">
             <img src={search} alt="search" />
-            <span className="sub-heading_light">Search</span>
+            <input
+              className="sub-heading_dark focus:outline-none placeholder:sub-heading_light"
+              placeholder="Search"
+            />
           </div>
         </div>
 
