@@ -1,7 +1,7 @@
 # Team Chat Project
 
 The Team Chat project is a web application built using React, Vite, and Tailwind CSS. 
-To access the project, visit [Team Chat]([https://team-chat-ui.netlify.app/]).
+To access the project, visit [Team Chat](https://team-chat-ui.netlify.app/).
 
 ## Compatibility
 The UI of the Team Chat project is optimized for a screen resolution of 1440x1048 pixels. For the best viewing experience, it is recommended to set your screen resolution to this dimension. Here are the steps to do so:
