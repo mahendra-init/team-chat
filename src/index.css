@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.root{
+    font-family: 'Inter';
+    height: 1048px;
+    width: 1440px;
+}
+.sideBar-container {
+    width: 101px;
+    height: 1048px;
+}
+
+.mid-container {
+    width: 960px;
+    height: 1048px;
+    background-color: white;
+    display: flex;
+}
+
+.mid-container_left {
+    width: 400px;
+    background-color: #F7F5F4;
+}
+.mid-container_right {
+    flex: 1;
+}
+
+.right-container {
+    width: 379px;
+    height: 1048px;
+}
+
+.circle {
+  border-radius:50%;
+  width:74px;
+  height:74px;
+  background:
+      radial-gradient(circle at center,white 65%,transparent 60.5%),
+      linear-gradient(to right,#82CF9C 70%, #FFE0C9 0);
+}
+
+.outgoing_bubble,  .incoming_bubble{
+    position: relative;
+    width: fit-content;
+    height: 40px;
+    border-radius: 8px;
+    padding: 2px 8px 2px 8px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.outgoing_bubble{
+    background: #FF731D;
+    border-top-right-radius: 0px;
+}
+
+.incoming_bubble{
+    background: #F7F5F4;
+    border-top-left-radius: 0px;
+}
+
+.outgoing_bubble:after,  .incoming_bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    top: -12px;
+}
+.outgoing_bubble:after {
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #FF731D transparent;
+    right: 0;
+}
+.incoming_bubble:after {
+    border-width: 20px 0 0 20px;
+    border-color: transparent transparent transparent #F7F5F4;
+    left: 0;
+}
+
+@layer components {
+    .heading {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.36px;
+        color: #000000;
+    }
+
+    .sub-heading_light {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.94px;
+        color: #A19791;
+    }
+    
+    .sub-heading_dark {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.94px;
+        color: #000000;
+    }
+
+        .divider {
+            background-color: #DADADA;
+            border: 1px solid #DADADA;
+        }
+}
